@@ -33,29 +33,29 @@ jobs:
         run: west update
       - name: West Zephyr export
         run: west zephyr-export
-      - name: West Build (Kyria Left)
-        run: west build -s zmk/app -b nice_nano -- -DSHIELD=kyria_left -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
-      - name: Kyria DTS File
+      - name: West Build (Andante Left)
+        run: west build -s zmk/app -b nice_nano -- -DSHIELD=andante_left -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+      - name: Andante DTS File
         if: ${{ always() }}
         run: cat -n build/zephyr/nice_nano.dts.pre.tmp
-      - name: Kyria Left Kconfig file
+      - name: Andante Left Kconfig file
         run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
       - name: Rename zmk.uf2
-        run: cp build/zephyr/zmk.uf2 kyria_left_nice_nano.uf2
-      - name: Archive (Kyria Left)
+        run: cp build/zephyr/zmk.uf2 andante_left_nice_nano.uf2
+      - name: Archive (Andante Left)
         uses: actions/upload-artifact@v2
         with:
           name: firmware
-          path: kyria_left_nice_nano.uf2
-      - name: West Build (Kyria Right)
-        run: west build --pristine -s zmk/app -b nice_nano -- -DSHIELD=kyria_right -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+          path: andante_left_nice_nano.uf2
+      - name: West Build (Andante Right)
+        run: west build --pristine -s zmk/app -b nice_nano -- -DSHIELD=andante_right -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
 
-      - name: Kyria Right Kconfig file
+      - name: Andante Right Kconfig file
         run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
       - name: Rename zmk.uf2
-        run: cp build/zephyr/zmk.uf2 kyria_right_nice_nano.uf2
-      - name: Archive (Kyria Right)
+        run: cp build/zephyr/zmk.uf2 andante_right_nice_nano.uf2
+      - name: Archive (Andante Right)
         uses: actions/upload-artifact@v2
         with:
           name: firmware
-          path: kyria_right_nice_nano.uf2
+          path: andante_right_nice_nano.uf2
