@@ -35,10 +35,10 @@
 		};
 	qwerty_layer {
             bindings = <
-    &lt FUN TAB  &kp Q  &kp W  &kp E     &kp R     &kp T     /**/  &kp Y    &kp U         &kp I         &kp O    &kp P           &kp BKSP
-    &lt NUM ESC  &kp A  &kp S  &kp D     &kp F     &kp G     /**/  &kp H    &kp J         &kp K         &kp L    &kp SCLN        &kp QUOT
-    &kp LSFT      &kp Z  &kp X  &kp C     &kp V     &kp B     /**/  &kp N    &kp M         &kp CMMA      &kp DOT  &tmt RALT FSLH  &mt RSFT BSLH
-                                &kp LCTL  &kp LALT  &kp LGUI  /**/  &kp SPC  &lt NAV RET  &lt MED DEL
+    &kp ESC &kp Q  &kp W  &kp E     &kp R     &kp T     /**/  &kp Y    &kp U         &kp I         &kp O    &kp P           &kp BKSP
+    &lt NUM TAB &kp A  &kp S  &kp D     &kp F     &kp G     /**/  &kp H    &kp J         &kp K         &kp L    &kp SCLN        &kp QUOT
+    &kp LSFT      &kp Z  &kp X  &kp C     &kp V     &kp B     /**/  &kp N    &kp M         &kp CMMA      &kp DOT  &kp FSLH  &kp BSLH
+                                &kp LCTL  &kp LALT  &kp LGUI  /**/  &kp SPC  &trans  &kp DEL
             >;
         };
 
