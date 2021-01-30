@@ -1,11 +1,11 @@
 manifest:
   remotes:
-    - name: jmding
-      url-base: https://github.com/jmding8
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
   projects:
     - name: zmk
-      remote: jmding
-      revision: personal
+      remote: zmkfirmware
+      revision: main
       import: app/west.yml
   self:
     path: config
