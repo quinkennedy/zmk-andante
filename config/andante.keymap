@@ -6,7 +6,7 @@
 #define L_NUM 6
 #define L_SYM 7
 #define L_FUNC 8
-{
+/ {
   keymap {
     compatible="zmk,keymap";
 		MC_layer {
