@@ -11,10 +11,10 @@
     compatible="zmk,keymap";
 		MC_layer {
           bindings = <
-&lt L_FUNC TAB   &kp SINGLE_QUOTE &kp COMMA        &kp PERIOD &kp P            &kp Y      &kp F &kp G &kp C &kp R &kp L &kp BACKSPACE
-&lt L_NUM ESC    &kp A            &kp O            &kp E      &kp U            &kp I      &kp D &kp H &kp T &kp N &kp S &kp MINUS    
-&kp LEFT_SHIFT   &kp SEMICOLON    &kp Q            &kp J      &kp K            &kp X      &kp B &kp M &kp W &kp V &kp Z &kp BACKSLASH
-&kp LEFT_CONTROL &kp LEFT_ALT     &kp LEFT_COMMAND &kp SPACE  &lt L_SYM RETURN &kp DELETE                                            
+&lt L_FUNC TAB   &kp SINGLE_QUOTE &kp COMMA        &kp PERIOD    &kp P            &kp Y           &kp F &kp G &kp C &kp R &kp L &kp BACKSPACE
+&lt L_NUM ESC    &kp A            &kp O            &kp E         &kp U            &kp I           &kp D &kp H &kp T &kp N &kp S &kp MINUS    
+&kp LEFT_SHIFT   &kp SEMICOLON    &kp Q            &kp J         &kp K            &kp X           &kp B &kp M &kp W &kp V &kp Z &kp BACKSLASH
+&kp LEFT_CONTROL &kp LEFT_ALT     &kp LEFT_COMMAND &lt L_Q SPACE &lt L_SYM RETURN &lt L_BT DELETE                                            
           >;
         };
 		TC_layer {
